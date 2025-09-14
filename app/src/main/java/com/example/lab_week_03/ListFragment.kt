@@ -40,9 +40,7 @@ class ListFragment : Fragment(), View.OnClickListener {
             view.findViewById(R.id.latte)
         )
 
-        coffeeList.forEach {
-            it.setOnClickListener(this)
-        }
+        coffeeList.forEach { it.setOnClickListener(this) }
     }
 
     override fun onClick(v: View?) {
