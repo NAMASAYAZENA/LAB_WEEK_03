@@ -4,8 +4,7 @@
     android:padding="24dp"
     android:gravity="center_horizontal"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/ic_kopi">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/coffee_title"
@@ -43,5 +42,14 @@
         android:textSize="16sp"
         android:padding="12dp"
         android:backgroundTint="@color/coffee_brown"
-        android:textColor="@android:color/black"/>
+        android:textColor="@android:color/white"/>
+
+    <ImageView
+        android:id="@+id/coffee_icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_kopi"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="Coffee Icon"
+        android:scaleType="centerInside"/>
 </LinearLayout>
