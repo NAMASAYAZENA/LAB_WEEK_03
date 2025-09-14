@@ -16,13 +16,16 @@ class ListFragment : Fragment(), View.OnClickListener {
         return inflater.inflate(R.layout.fragment_list, container, false)
     }
 
+    // ✅ hanya satu onViewCreated
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         val coffeeList = listOf<View>(
             view.findViewById(R.id.affogato),
             view.findViewById(R.id.americano),
-            view.findViewById(R.id.latte)
+            view.findViewById(R.id.latte),
+            view.findViewById(R.id.cappuccino),
+            view.findViewById(R.id.macchiato)
         )
 
         coffeeList.forEach { it.setOnClickListener(this) }
